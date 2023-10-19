@@ -534,27 +534,38 @@ input .text{
 
 
 /*---media for menu---*/
-@media only screen and (max-width:800px){
-    
-    nav ul{
-        top: 70px;
-        left: 0;
-        background-color: #ffffff;
+/*---media for menu---*/
+@media only screen and (max-width:992px){
+    body{
         width: 100%;
-        display: block;
-        cursor: pointer;
-        text-align: center;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
     }
-    nav ul li{
-        display: block;
-        margin-right: 50px;
-        margin-top: 10px;
-        margin-bottom: 10px;
+   
+    h1{
+        font-size: 30px;
     }
-    nav ul li a{
-        color: white;
-        
+    .btn7{
+        display: none;
     }
+    .form{
+        display: none;
+    }
+    .btn3, .btn4{
+        width: 100%;
+}
+}
+@media only screen and (max-width:800px){
+    body{
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+    }
+   
     h1{
         font-size: 30px;
     }
@@ -569,30 +580,20 @@ input .text{
     }
 }
 @media only screen and (max-width: 480px){
+
+    body{
+        margin: auto;
+        padding: auto;
+    }
    .row{
     text-align: center;
+    margin: auto;
    } 
    .col-2, .col-3, .col-4{
     flex-basis: 100%;
    }
-   nav ul{
-    top: 70px;
-    left: 0;
-    background-color: white;
-    width: 100%;
-    display: block;
-    cursor: pointer;
-}
-nav ul li{
-    display: block;
-    margin-right: 50px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-nav ul li a{
-    color: white;
-    
-}
+
+
 h1{
     font-size: 30px;
 }
